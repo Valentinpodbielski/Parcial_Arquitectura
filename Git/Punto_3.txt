@@ -1,0 +1,102 @@
+  125  sudo docker build -t lordvalen/web-podbielski .
+  126  sudo systemctl stop docker
+  127  sudo umount /dev/mapper/vg_datos-lv_docker
+  128  sudo lvs
+  129  cd
+  130  sudo lvs
+  131  df -h
+  132  lvremove /dev/mapper/vg_datos-lv_docker 
+  133  sudo lvs
+  134  sudo lvremove /dev/mapper/vg_datos-lv_docker 
+  135  sudo lvs
+  136  sudo vgs
+  137  lvcreate -l +100%FREE  vg_datos -n lv_docker
+  138  sudo lvcreate -l +100%FREE  vg_datos -n lv_docker
+  139  sudo lvs
+  140  sudo mkfs.ext4 /dev/mapper/vg_datos-lv_docker 
+  141  sudo mount /dev/mapper/vg_datos-lv_docker /var/lib/docker
+  142  df -h
+  143  cd UTN-FRA_SO_Examenes/
+  144  ll
+  145  cd 202406_Recu/
+  146  cd docker/
+  147  ll
+  148  sudo systemctl restart docker
+  149  sudo docker login
+  150  docker build -t lordvalen/prueba .
+  151  sudo docker build -t lordvalen/prueba .
+  152  docker image ls
+  153  sudo docker image ls
+  154  sudo docker push lordvalen/prueba
+  155  cd UTN-FRA_SO_Examenes/
+  156  ll
+  157  cd 202406_Recu/
+  158  cd docker/
+  159  docker image ls
+  160  id
+  161  grep docker /etc/group
+  162  sudo usermod -a -G docker $(whoami)
+  163  cd UTN-FRA_SO_Examenes/202406_Recu/docker
+  164  docker ps
+  165  docker image list
+  166  docker login
+  167  docker build -t lordvalen/web2-podbielski .
+  168  ll
+  169  UTN-FRA_SO_Examenes/202406_Recu/docker
+  170  cd UTN-FRA_SO_Examenes/202406_Recu/docker
+  171  ll
+  172  vim docker
+  173  ll
+  174  vim dockerfile 
+  175  docker ps
+  176  docker login
+  177  docker image ls
+  178  docker build -t lordvalen/web2-podbielski .
+  179  docker image ls
+  180  sudo docker push lordvalen/web2-podbielski
+  181  docker push lordvalen/web2-podbielski
+  182  docker image ls
+  183  docker run -d -p 81:80 lordvalen/web2-podbielski
+  184  curl localhost:81
+  185  ll
+  186  cd web/
+  187  ll
+  188  cd file/
+  189  ll
+  190  cat info.txt 
+  191  lscpu | grep 'Model name'
+  192  lscpu
+  193  lscpu | grep "MHz"
+  194  lscpu
+  195  lscpu | grep "CPU max MHz"
+  196  ll
+  197  lscpu | grep "CPU max MHz"
+  198  cat /proc/cpuinfo | grep "MHz"
+  199  ll
+  200  cat info.txt 
+  201  rm info.txt 
+  202  ll
+  203  (cat /proc/cpuinfo | grep "MHz" && lscpu) > info.txt
+  204  ll
+  205  cat info.txt 
+  206  ll
+  207  rm info.txt 
+  208  (cat /proc/cpuinfo | grep "MHz" && lscpu) | grep -E "MHz|Model name" > info.txt
+  209  ll
+  210  cat info.txt 
+  211  ll
+  212  cd ..
+  213  ll
+  214  cat docker-compose.yml 
+  215  vim docker-compose.yml 
+  216  ll
+  217  cd web/
+  218  ll
+  219  cd file/
+  220  ll
+  221  cd ..
+  222  vim docker-compose.yml 
+  223  docker compose up -d
+  224  sudo docker ps
+  225  sudo docker exec -it docker-web-1 cat /web/file/info.txt
+  226  docker exec -it docker-web-1 cat /usr/share/nginx/html/file/info.txt

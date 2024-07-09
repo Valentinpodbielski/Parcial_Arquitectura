@@ -1,0 +1,43 @@
+   29  sudo fdisk -l
+   30  sudo fdisk /dev/sde
+   31  sudo fdisk /dev/sdc
+   32  sudo fdisk /dev/sdd
+   33  sudo pvcreate /dev/sde1
+   34  sudo pvs
+   35  sudo pvcreate /dev/sdc1
+   36  sudo pvcreate /dev/sdc2
+   37  sudo pvs
+   38  sudo pvcreate /dev/sdd1
+   39  sudo pvcreate /dev/sdd2
+   40  sudo pvs
+   41  vgcreate vg_temp /dev/sde1
+   42  sudo vgcreate vg_temp /dev/sde1
+   43  sudo vgcreate vg_datos /dev/sdc1
+   44  sudo vgextend vg_datos /dev/sdd1
+   45  sudo vgs
+   46  sudo vgextend vg_datos /dev/sdd2
+   47  sudo pvs
+   48  sudo vgs
+   49  lvcreate -l +100%FREE  vg_temp -n lv_swap
+   50  sudo lvcreate -l +100%FREE  vg_temp -n lv_swap
+   51  sudo lvcreate -L +1.5G  vg_datos -n lv_multimedia
+   52  sudo lvcreate -L +10M  vg_datos -n lv_docker
+   53  sudo lvs
+   54  sudo mkswap /dev/mapper/vg_temp-lv_swap
+   55  sudo swapon /dev/mapper/vg_temp-lv_swap
+   56  free -f
+   57  free -h
+   58  sudo mkfs.ext4 /dev/mapper/vg_datos-lv_docker
+   59  sudo mkfs.ext4 /dev/mapper/vg_datos-lv_multimedia
+   60  sudo mount /dev/mapper/vg_datos-lv_docker /var/lib/docker
+   61  df -h
+   62  mkdir /Multimedia
+   63  sudo mkdir /Multimedia
+   64  sudo mount /dev/mapper/vg_datos-lv_multimedia /Multimedia/
+   65  df -f
+   66  df -h
+   67  sudo fdisk -l
+   68  sudo fdisk /dev/sde
+   69  sudo mkswap /dev/sde2
+   70  sudo swapon /dev/sde2
+   71  free -h

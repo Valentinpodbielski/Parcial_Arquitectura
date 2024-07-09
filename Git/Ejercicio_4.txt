@@ -1,0 +1,362 @@
+  232  cat Punto_2.txt 
+  233  cd UTN-FRA_SO_Examenes/
+  234  cd 202406_Recu/
+  235  ll
+  236  cd ansible/
+  237  ll
+  238  cd roles/
+  239  ll
+  240  cd 2PRecuperatorio/
+  241  ll
+  242  cd tasks/
+  243  ll
+  244  vim main.yml 
+  245  ll
+  246  ansible-galaxy role init 2PRecuperatorio
+  247  ll
+  248  ansible-galaxy role init Alta_Usuarios_<Podbielski>
+  249  ansible-galaxy role init Alta_Usuarios<Podbielski>
+  250  ll
+  251  ansible-galaxy init Sudoers_<tu-podbielski>
+  252  ansible-galaxy init Sudoers_tu-Podbielski
+  253  ansible-galaxy role init Alta_Usuarios_Podbielski
+  254  ll
+  255  Instala-tools_Podbielski
+  256  ansible-galaxy-role init Instala-tools_Podbielski
+  257  ll
+  258  ansible-galaxy role init Instala-tools_Podbielski
+  259  ll
+  260  vim Alta_Usuarios_Podbielski/
+  261  ll
+  262  vim Alta_Usuarios_Podbielski/
+  263  cd ..
+  264  ll
+  265  cd vars/
+  266  ll
+  267  cd ..
+  268  ll
+  269  cd ..
+  270  ll
+  271  cd 2PRecuperatorio/
+  272  ll
+  273  cd tasks/
+  274  ll
+  275  vim Alta_Usuarios_Podbielski/
+  276  ll
+  277  vim Alta_Usuarios_Podbielski
+  278  vim Alta_Usuarios_Podbielski/tasks/main.yml 
+  279  ll
+  280  vim Sudoers_tu-Podbielski/tasks/main.yml 
+  281  vim Instala-tools_Podbielski/tasks/main.yml 
+  282  vim 2PRecuperatorio/tasks/main.yml 
+  283  cd ..
+  284  ll
+  285  cd roles/
+  286  ll
+  287  cd 2PRecuperatorio/
+  288  ll
+  289  cd tasks/
+  290  ll
+  291  cd ..
+  292  ll
+  293  cd ,,
+  294  cd ..
+  295  ll
+  296  cd ..
+  297  ll
+  298  cd inventory/
+  299  ll
+  300  cd ..
+  301  ll
+  302  cd logs/
+  303  ll
+  304  cd ..
+  305  ll
+  306  cd roles/
+  307  ll
+  308  cd 2PRecuperatorio/
+  309  ll
+  310  cd defaults/
+  311  ll
+  312  cd ..
+  313  cd tasks/
+  314  ll
+  315  mkdir datos.txt
+  316  ll
+  317  vim datos.txt/
+  318  vim datos.txt
+  319  ll
+  320  rm datos.txt/
+  321  ll
+  322  cd ..
+  323  cd roles/
+  324  cd 2
+  325  cd 2PRecuperatorio/
+  326  mkdir templates
+  327  ll
+  328  cd templates/
+  329  ll
+  330  touch template_01.j2
+  331  ll
+  332  vim template_01.j2 
+  333  ll
+  334  cd ..
+  335  cc
+  336  ll
+  337  cd tasks/
+  338  ll
+  339  cd 2PRecuperatorio/tasks/
+  340  ll
+  341  vim main.yml 
+  342  cd ..
+  343  ll
+  344  vim playbook.yml 
+  345  ll
+  346  cd roles/
+  347  ll
+  348  cd 2PRecuperatorio/
+  349  ll
+  350  cd tasks/
+  351  ll
+  352  vim Instala-tools_Podbielski/tasks/main.yml 
+  353  cd ..
+  354  vim playbook.yml 
+  355  cd
+  356  history
+  357  history | sed -n '234,352p' > Punto_4.txt
+  358  ll
+  359  mv Punto_2.txt Punto_3.txt
+  360  ll
+  361  cd UTN-FRA_SO_Examenes/202406_Recu/ansible
+  362  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  363  ll
+  364  cd roles/
+  365  cd 2PRecuperatorio/
+  366  cd tasks/
+  367  ll
+  368  cd ..
+  369  vim playbook.yml 
+  370  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  371  ansible-playbook playbook.yml
+  372  cd roles/
+  373  cd 2PRecuperatorio/
+  374  cd tasks/
+  375  ll
+  376  cd ..
+  377  vim playbook.yml 
+  378  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  379  cd /roles/2PRecuperatorio/tasks
+  380  cd roles/2PRecuperatorio/tasks
+  381  ll
+  382  cd Alta_Usuarios_Podbielski/
+  383  ll
+  384  cd tasks/
+  385  ll
+  386  cd ..
+  387  ll
+  388  vim playbook.yml 
+  389  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  390  tree /tmp
+  391  sudo tree tmp
+  392  sudo tree /tmp
+  393  cd 
+  394  sudo apt install tree
+  395  cd UTN-FRA_SO_Examenes/202406_Recu/ansible
+  396  sudo tree /tmp
+  397  vim playbook.yml 
+  398  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  399  vim playbook.yml 
+  400  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  401  ll
+  402  cd roles/
+  403  ll
+  404  vim Sudoers_Podbielski
+  405  cd 2PRecuperatorio/
+  406  cd tasks/
+  407  ll
+  408  cd Sudoers_tu-Podbielski/
+  409  ll
+  410  cd tasks/
+  411  vim main.yml 
+  412  cd ..
+  413  ll
+  414  vim Sudoers_Podbielski 
+  415  ansible-galaxy role init Sudoers_tu_Podbielski
+  416  ll
+  417  cd Sudoers_tu_Podbielski/
+  418  cd tasks/
+  419  vim main.yml 
+  420  cd ..
+  421  cd 2PRecuperatorio/
+  422  cd tasks/
+  423  ll
+  424  rm Sudoers_tu-Podbielski/
+  425  sudo rm Sudoers_tu-Podbielski/
+  426  cd..
+  427  cd ..
+  428  vim playbook.yml 
+  429  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  430  cd roles/
+  431  ll
+  432  rm Sudoers_Podbielski 
+  433  ll
+  434  cd ..
+  435  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  436  vim playbook.yml 
+  437  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  438  vim playbook.yml 
+  439  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  440  vim playbook.yml 
+  441  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  442  cd roles/
+  443  ll
+  444  cd Sudoers_tu_Podbielski/
+  445  ll
+  446  cd tasks/
+  447  ll
+  448  cd ..
+  449  vim playbook.yml 
+  450  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  451  cd r
+  452  cd roles/
+  453  ll
+  454  cd 2PRecuperatorio/
+  455  ll
+  456  cd tasks/
+  457  ll
+  458  cd ..
+  459  cd..
+  460  cd ..
+  461  ll
+  462  cd Sudoers_tu_Podbielski/
+  463  ll
+  464  cd tasks/
+  465  ll
+  466  ansible-galaxy role init Sudoers_tu_Podbielski
+  467  cd ..
+  468  cd Sudoers_tu_Podbielski/
+  469  ll
+  470  cd t
+  471  cd tasks/
+  472  ll
+  473  vim main.yml 
+  474  ññ
+  475  cd Sudoers_tu_Podbielski/
+  476  ll
+  477  cd tasks/
+  478  ll
+  479  vim main.yml 
+  480  cd ..
+  481  vim playbook.yml 
+  482  ansible-galaxy role init Sudoers_tu_Podbielski
+  483  ll
+  484  rm -rf Sudoers_tu_Podbielski/
+  485  ll
+  486  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  487  cd roles/
+  488  ll
+  489  cd 2
+  490  cd 2PRecuperatorio/
+  491  ll
+  492  cd tasks/
+  493  ll
+  494  cd Alta_Usuarios_Podbielski/
+  495  cd tasks/
+  496  vim main.yml 
+  497  cd ..
+  498  ll
+  499  rm -rf Sudoers_tu-Podbielski/
+  500  rm -rf Alta_Usuarios_Podbielski/
+  501  ll
+  502  cd ..
+  503  ll
+  504  ansible-galaxy role init Alta_Usuarios_Podbielski
+  505  ll
+  506  cd Alta_Usuarios_Podbielski/
+  507  cd tasks/
+  508  vim main.yml 
+  509  cd ...
+  510  cd ..
+  511  vim playbook.yml 
+  512  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  513  ll
+  514  cd roles/
+  515  ll
+  516  cd Alta_Usuarios_Podbielski/
+  517  ll
+  518  cd tasks/
+  519  ll
+  520  cd ..
+  521  cd Sudoers_tu_Podbielski/
+  522  ll
+  523  cd tasks/
+  524  ll
+  525  cd ..
+  526  cd Alta_Usuarios_Podbielski/
+  527  ll
+  528  cd tasks/
+  529  ll
+  530  ansible-galaxy role init Alta_Usuarios_Podbielski
+  531  cd Alta_Usuarios_Podbielski/
+  532  cd tasks/
+  533  vim main.yml 
+  534  cd ..
+  535  ll
+  536  vim main.yml 
+  537  cd .
+  538  cd ..
+  539  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  540  cd roles/
+  541  ll
+  542  cd Alta_Usuarios_Podbielski/
+  543  cd tasks/
+  544  cd Alta_Usuarios_Podbielski/
+  545  cd tasks/
+  546  vim main.yml 
+  547  cd ..
+  548  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  549  cd roles/
+  550  cd 2
+  551  cd 2PRecuperatorio/
+  552  ll
+  553  cd tasks/
+  554  ll
+  555  cd Instala-tools_Podbielski/
+  556  cd tasks/
+  557  vim main.yml 
+  558  cd ..
+  559  ll
+  560  cd ..
+  561  ll
+  562  rm -rf Instala-tools_Podbielski/
+  563  ll
+  564  cd ..
+  565  ansible-galaxy role init Instala-tools_Podbielski
+  566  cd Instala-tools_Podbielski/
+  567  cd tasks/
+  568  ll
+  569  ansible-galaxy role init Instala-tools_Podbielski
+  570  cd Instala-tools_Podbielski/
+  571  cd tasks/
+  572  cd ..
+  573  vim playbook.yml 
+  574  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  575  vim playbook.yml 
+  576  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  577  vim playbook.yml 
+  578  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  579  cd r
+  580  cd roles/
+  581  ll
+  582  cd Alta_Usuarios_Podbielski/
+  583  ll
+  584  cd tasks/
+  585  cd Alta_Usuarios_Podbielski/
+  586  cd tasks/
+  587  vim main.yml 
+  588  cd ..
+  589  ansible-playbook -i inventory/hosts playbook.yml -l testing
+  590  cd roles/Alta_Usuarios_Podbielski/tasks/Alta_Usuarios_Podbielski/tasks
+  591  vim main.yml 
+  592  cd -
+  593  ansible-playbook -i inventory/hosts playbook.yml -l testing

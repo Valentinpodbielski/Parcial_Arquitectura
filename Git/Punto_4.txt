@@ -1,0 +1,119 @@
+  234  cd 202406_Recu/
+  235  ll
+  236  cd ansible/
+  237  ll
+  238  cd roles/
+  239  ll
+  240  cd 2PRecuperatorio/
+  241  ll
+  242  cd tasks/
+  243  ll
+  244  vim main.yml 
+  245  ll
+  246  ansible-galaxy role init 2PRecuperatorio
+  247  ll
+  248  ansible-galaxy role init Alta_Usuarios_<Podbielski>
+  249  ansible-galaxy role init Alta_Usuarios<Podbielski>
+  250  ll
+  251  ansible-galaxy init Sudoers_<tu-podbielski>
+  252  ansible-galaxy init Sudoers_tu-Podbielski
+  253  ansible-galaxy role init Alta_Usuarios_Podbielski
+  254  ll
+  255  Instala-tools_Podbielski
+  256  ansible-galaxy-role init Instala-tools_Podbielski
+  257  ll
+  258  ansible-galaxy role init Instala-tools_Podbielski
+  259  ll
+  260  vim Alta_Usuarios_Podbielski/
+  261  ll
+  262  vim Alta_Usuarios_Podbielski/
+  263  cd ..
+  264  ll
+  265  cd vars/
+  266  ll
+  267  cd ..
+  268  ll
+  269  cd ..
+  270  ll
+  271  cd 2PRecuperatorio/
+  272  ll
+  273  cd tasks/
+  274  ll
+  275  vim Alta_Usuarios_Podbielski/
+  276  ll
+  277  vim Alta_Usuarios_Podbielski
+  278  vim Alta_Usuarios_Podbielski/tasks/main.yml 
+  279  ll
+  280  vim Sudoers_tu-Podbielski/tasks/main.yml 
+  281  vim Instala-tools_Podbielski/tasks/main.yml 
+  282  vim 2PRecuperatorio/tasks/main.yml 
+  283  cd ..
+  284  ll
+  285  cd roles/
+  286  ll
+  287  cd 2PRecuperatorio/
+  288  ll
+  289  cd tasks/
+  290  ll
+  291  cd ..
+  292  ll
+  293  cd ,,
+  294  cd ..
+  295  ll
+  296  cd ..
+  297  ll
+  298  cd inventory/
+  299  ll
+  300  cd ..
+  301  ll
+  302  cd logs/
+  303  ll
+  304  cd ..
+  305  ll
+  306  cd roles/
+  307  ll
+  308  cd 2PRecuperatorio/
+  309  ll
+  310  cd defaults/
+  311  ll
+  312  cd ..
+  313  cd tasks/
+  314  ll
+  315  mkdir datos.txt
+  316  ll
+  317  vim datos.txt/
+  318  vim datos.txt
+  319  ll
+  320  rm datos.txt/
+  321  ll
+  322  cd ..
+  323  cd roles/
+  324  cd 2
+  325  cd 2PRecuperatorio/
+  326  mkdir templates
+  327  ll
+  328  cd templates/
+  329  ll
+  330  touch template_01.j2
+  331  ll
+  332  vim template_01.j2 
+  333  ll
+  334  cd ..
+  335  cc
+  336  ll
+  337  cd tasks/
+  338  ll
+  339  cd 2PRecuperatorio/tasks/
+  340  ll
+  341  vim main.yml 
+  342  cd ..
+  343  ll
+  344  vim playbook.yml 
+  345  ll
+  346  cd roles/
+  347  ll
+  348  cd 2PRecuperatorio/
+  349  ll
+  350  cd tasks/
+  351  ll
+  352  vim Instala-tools_Podbielski/tasks/main.yml 
